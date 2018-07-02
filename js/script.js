@@ -66,7 +66,9 @@ const images = {
 const scenes = {
 "scene1": "patient.png",
 "scene2": "bar.jpg",
-"scene3": "scene1.jpg"
+"scene3": "scene1.jpg",
+"scene4": "Kindergarten.jpg",
+"scene5": "KindergartenTisch.png"
 };
 
 // Define the Characters
@@ -79,7 +81,8 @@ const characters = {
 	,
 	"er": {
 		"Name": "Erzieherin",
-		"Color": "#5bcaff"
+		"Color": "#5bcaff",
+		"Face": "Erzieherin.png"
 	}
 	,
 	"k1": {
@@ -108,16 +111,17 @@ const characters = {
 let script = {
 	// The game starts here.
 	"Start": [
-	
+
 	"e Deinen ersten Arbeitstag im Kindergarten hast du schon fast geschafft! Es ist schon Mittag und es gibt Essen."
-	// Bild 1
-	
+	,"scene scene5 with fadeIn"
+
 	, "er Schaut mal Kinder, heute gibt’s Spaghetti Bolognese! Guten Appetit, lasst es euch schmecken."
-	, "k1 Ähh, der ist voll komisch, der isst gar keine Soße! Ätschi, Nudelkopf."
+	, "scene scene4 with fadeIn"
+	, "k1 Ähh, die ist voll komisch, die isst gar keine Soße! Ätschi, Nudelkopf."
 	, "er Was ist denn hier los, hör auf damit! Das haben wir doch schon so oft gehabt. Manche Kinder mögen Fleisch und manche essen keines."
-	
-	, "scene scene2 fadeIn"
-	
+
+	, "scene scene2 with fadeIn"
+
 	, "a Hey, wie war eigentlich dein erster Tag in Kindergarten?"
 	, "er Boah, war echt anstrengend. Beim Mittagessen haben sich zwei Kinder fast geprügelt."
 	, "m Was war denn los?"
@@ -132,13 +136,14 @@ let script = {
 	, "m Ja, genau. Also auch kein Schweinefleisch und wir essen auch nichts, wo Milch drin ist, zusammen mit Fleisch. Sehr streng gläubige Juden essen sogar kein Fleisch aus Töpfen, wo Milch drin war. "
 	, "f Werden bei euch die Tiere nicht auch anders geschlachtet und müssen ausbluten?"
 	, "m Ja, denn in der Tora steht, dass das Blut Sitz der Seele ist. Und das dürfen Menschen nicht essen, denn das gehört Gott. Wenn ich das mache, hab ich eine Verbindung zu meinen Verwandten und auch allen Juden, die früher gelebt haben. Die das auch gemacht haben und sind Gott begegnet. Das erzählt auch die Tora."
-	, "f Da macht ihr euch ja echt Mühe. Bei uns ist das nicht so ausgeprägt. Ich kenn das so, dass wir am Karfreitag fasten. Damit erinnern wir uns an den Tag, an dem Jesus gekreuzigt wurde. Mein Onkel macht das noch so, dass er jeden Freitag kein Fleisch ist. Das ist auch zur Erinnerung die Kreuzigung. Da sehen wir, dass Gottes Liebe selbst da nicht aufgehört hat, wo es ihn das Leben gekostet hat."
+	, "f Da macht ihr euch ja echt Mühe. Bei uns ist das nicht so ausgeprägt. Ich kenn das so, dass wir am Karfreitag fasten. Damit erinnern wir uns an den Tag, an dem Jesus gekreuzigt wurde."
+	, "f Mein Onkel macht das noch so, dass er jeden Freitag kein Fleisch ist. Das ist auch zur Erinnerung die Kreuzigung. Da sehen wir, dass Gottes Liebe selbst da nicht aufgehört hat, wo es ihn das Leben gekostet hat."
 	, "m So was wie Fasten kenn ich auch.",
 	, "a Ja, ich auch, aber das bei euch, Finn, ist ja schon ziemlich speziell. Gibt’s auch was, was ihr normal bei jedem Essen macht?"
 	, "f Auch wir denken an Gott beim Essen. Aber bei uns gibt’s auch Blutwurst. Wir sprechen dann ein Dankgebet. Bei jedem Essen denken wir an Gott und sprechen ein kurzes Gebet als Dank dafür, dass er letztlich für unser Essen verantwortlich ist."
-	
-	// Bild 3
-	
+
+	,"scene scene4 fadeIn"
+
 	, "e Nach einem langen Abend der Freunde steht am nächsten Tag das Treffen der Erzieher*innen an. Die Frage ist, ob man fleischloses Essen verpflichtend für alle Kinder machen soll. Deine Anleiterin fragt dich kurz vor dem Treffen, was du denn dazu denkst. Wofür setzt du dich ein?"
 
 	,"end"
